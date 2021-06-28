@@ -1,0 +1,307 @@
+body {
+  background: #000;
+}
+
+.playground {
+  position: relative;
+  background: url(images/Lost_City_Lawn.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.flower_pos {
+  position: absolute;
+  width: 65px;
+  height: 90px;
+  /* background: url(images/canon-removebg-preview.png); */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 3px dotted black;
+}
+
+.playground .flower_pos:nth-child(1) {
+  top: 150px;
+  left: 30px;
+}
+
+.playground .flower_pos:nth-child(2) {
+  top: 237px;
+  left: 30px;
+}
+
+.playground .flower_pos:nth-child(3) {
+  top: 324px;
+  left: 30px;
+}
+
+.playground .flower_pos:nth-child(4) {
+  top: 411px;
+  left: 30px;
+}
+
+.playground .flower_pos:nth-child(5) {
+  top: 498px;
+  left: 30px;
+}
+
+.playground .flower_pos:nth-child(6) {
+  top: 150px;
+  left: 100px;
+}
+
+.playground .flower_pos:nth-child(7) {
+  top: 237px;
+  left: 100px;
+}
+
+.playground .flower_pos:nth-child(8) {
+  top: 324px;
+  left: 100px;
+}
+
+.playground .flower_pos:nth-child(9) {
+  top: 411px;
+  left: 100px;
+}
+
+.playground .flower_pos:nth-child(10) {
+  top: 498px;
+  left: 100px;
+}
+
+.playground .flower_pos:nth-child(11) {
+  top: 150px;
+  left: 175px;
+}
+
+.playground .flower_pos:nth-child(12) {
+  top: 237px;
+  left: 175px;
+}
+
+.playground .flower_pos:nth-child(13) {
+  top: 324px;
+  left: 175px;
+}
+
+.playground .flower_pos:nth-child(14) {
+  top: 411px;
+  left: 175px;
+}
+
+.playground .flower_pos:nth-child(15) {
+  top: 498px;
+  left: 175px;
+}
+
+.gameTitle {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: red;
+}
+
+.menu {
+  position: relative;
+}
+
+.menuTitle {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: linen;
+  padding-top: 20px;
+}
+
+.menuScreen {
+  padding: 20px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.192);
+  overflow-y: auto;
+  width: 100%;
+  height: 550px;
+  position: relative;
+  backdrop-filter: blur(0px);
+  z-index: 3;
+  transform: translateX(-100%);
+  transition: 0.3s all ease-in-out;
+}
+
+.menu:hover .menuScreen {
+  transform: translateX(0%);
+}
+
+.menuScreen:hover {
+  backdrop-filter: blur(5px);
+}
+
+.itemList {
+  position: relative;
+}
+
+.bgMenuScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 550px;
+  background: url("./images/81K8RMvPDCL.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.itemCard {
+  opacity: 0.7;
+  transition: 0.5s all ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px auto;
+  background: rgba(0, 0, 0, 0.432);
+  min-height: 180px;
+}
+
+.itemCard:hover {
+  box-shadow: 0 0 3px 5px yellowgreen;
+  opacity: 1;
+}
+
+.itemName,
+.itemPrice {
+  color: yellow;
+  text-align: center;
+}
+
+.itemIMG {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.sunflower {
+  background: url(./images/sunFlower-removebg-preview.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.goopeashooter {
+  background: url(./images/Goopeashooter-removebg-preview.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.carrot {
+  background: url(./images/Carrot_Rocket_Launcher-removebg-preview.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.coconut {
+  background: url(./images/canon-removebg-preview.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.toad {
+  background: url(./images/Toadstoolhd-removebg-preview.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.stallia {
+  background: url(./images/HDStallia-removebg-preview.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.missileToe {
+  background: url(./images/kisspng-plants-removebg-preview.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.turkeyPult {
+  background: url(./images/HD_Turkey-pult-removebg-preview.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.yourBudget {
+  text-align: right;
+  padding: 10px 0 20px 0;
+  font-size: 1.3rem;
+}
+
+.shove {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  top: 30%;
+  left: 10px;
+  background: url(images/Shovel2-removebg-preview.png);
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s all ease-in-out;
+}
+
+.shove:hover {
+  transform: rotate(15deg);
+}
+
+.chat {
+  top: 50%;
+  background: url(images/icon-256x256-removebg-preview.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.chat_modal {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  top: calc((100% - 500px) / 2);
+  left: calc((100% - 500px) / 2);
+  background: white;
+  padding: 30px;
+  display: none;
+}
+
+.chat_content_holder {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  margin-bottom: 10px;
+}
+
+.chat_content {
+  background: lightseagreen;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 0 0 10px 0;
+}
+
+.chat_sender {
+  background: gray;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mess_content {
+  width: 300px;
+  display: block;
+}
